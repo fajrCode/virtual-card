@@ -6,7 +6,7 @@ export default function Card() {
   return (
     <div className="card">
       <Top user={user} />
-      <Bottom />
+      <Bottom user={user} />
     </div>
   );
 }

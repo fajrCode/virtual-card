@@ -38,12 +38,14 @@ body {
 
 .card .top {
   position: relative;
+}
+
+.card .top img {
+  position: relative;
   width: 300px;
   height: 300px;
   color: #fffff9;
   border-radius: 1rem 1rem 0 0;
-  background: url("https://i.pinimg.com/736x/ed/11/88/ed11887644f3353406acf77d4bdf6f60.jpg")
-    no-repeat center top;
   transition: background-size 1.5s ease-in-out;
   background-size: 100%;
 }

@@ -1,26 +1,22 @@
-export default function Bottom() {
+/* eslint-disable react/prop-types */
+export default function Bottom({ user }) {
   return (
     <>
       <div className="bottom">
         <div className="desc">
-          <p>
-            My name is <b>Fajri Arvandi</b> and I am a Developer
-          </p>
-          <p>
-            To say that I love software is an undestatement, I spend every
-            waking hour building something Fun
-          </p>
+          <p>{user.desc.intro}</p>
+          <p>{user.desc.about}</p>
         </div>
         <div className="buttons">
-          <button>
-            <i className="fa fa-js"></i>Javascript
-          </button>
-          <button>
-            <i className="fa fa-node"></i>NodeJS
-          </button>
-          <button>
-            <i className="fa fa-react"></i>React
-          </button>
+          {user.skills.map((item, index) => (
+            <button
+              key={index}
+              onClick={() => window.open(item.link, "_blank")}
+            >
+              <i className={`fa fa-${item.icon}`}></i>
+              {item.text}
+            </button>
+          ))}
         </div>
       </div>
     </>
