@@ -160,19 +160,15 @@ body {
   justify-content: center;
   align-items: center;
   margin-right: 0.5rem;
-  color: #1d252c;
+  color: white;
   font-size: 0.7rem;
   background-color: #304D30;
   border-radius: 1em;
 }
 
-.height {
-  color: #fffff9;
-}
-
 .card .bottom .buttons button i {
-  color: white;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
+  
 }
 
 .card .bottom .buttons button:hover {

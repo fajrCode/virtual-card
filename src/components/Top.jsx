@@ -1,33 +1,24 @@
-export default function Top() {
+/* eslint-disable react/prop-types */
+import Icon from "./Icon";
+
+export default function Top({user}) {
   return (
     <>
       <div className="top">
         <div className="social-buttons">
-          <button>
-            <i className="fa fa-facebook"></i>
-          </button>
-          <button>
-            <i className="fa fa-instagram"></i>
-          </button>
-          <button>
-            <i className="fa fa-twitter"></i>
-          </button>
+          <Icon icon="facebook" />
+          <Icon icon="instagram" />
+          <Icon icon="twitter" />
         </div>
         <div className="social-buttons right">
-          <button>
-            <i className="fa fa-linkedin"></i>
-          </button>
-          <button>
-            <i className="fa fa-github"></i>
-          </button>
+          <Icon icon="linkedin" />
+          <Icon icon="github" />
         </div>
         <div className="text">
-          <div className="title">
-            <h2>Fajri Arvandi</h2>
-          </div>
           <div className="name-wrapper">
-            <small>Back-End Developer</small>
+            <div className="name">{user.name}</div>
           </div>
+          <div className="title">{user.title}</div>
         </div>
         <button className="like">
           <i className="fa fa-heart"></i>
