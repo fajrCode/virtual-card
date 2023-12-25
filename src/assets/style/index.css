@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font: 400 16px/1.5 "Poppins", sans-serif;
+  background-color: #072f5f;
+}
+
+.card {
+  max-width: 300px;
+  margin: 0rem;
+  background-color: #fffff9;
+  border-radius: 1rem;
+  box-shadow: 0 30px 20px -10px rgba(0, 0, 0, 0.2);
+}
+
+.card button {
+  border: none;
+  cursor: pointer;
+}
+
+.card button:focus {
+  outline: 0;
+}
+
+.card .top {
+  position: relative;
+  margin: -2rem;
+  width: 300px;
+  height: 360px;
+  color: #fffff9;
+  border-radius: 1rem 1rem 0 0;
+  background: url("https://i.pinimg.com/564x/fb/ca/55/fbca559bda6a4a5582ee8124236712d3.jpg")
+    no-repeat center top;
+  transition: background-size 1.5s ease-in-out;
+  background-size: 100%;
+}
+
+.card .top::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 33%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+
+.card .top .social-buttons {
+  float: left;
+  position: absolute;
+  top: 0;
+  padding: 1.5rem;
+  padding-top: 0.6rem;
+  padding-left: 0.9rem;
+}
+
+.card .top .social-buttons.right {
+  float: right;
+  top: 0;
+  right: 0;
+  padding: 1.5rem;
+  padding-top: 0.6rem;
+  padding-right: 0.9rem;
+}
+
+.card .top .social-buttons button {
+  background-color: transparent;
+}
+
+.card .top .social-buttons button i {
+  font-size: 1rem;
+  color: #adc0d8;
+}
+
+.card .top .social-buttons button:hover i {
+  color: #fffff9;
+  transform: scale(1.5);
+}
+
+.card .top button.like {
+  z-index: 1;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: transparent;
+}
+
+.card .top button.like i {
+  font-size: 1.3rem;
+  color: #fffff9;
+}
+
+.card .top .text {
+  text-align: left;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  z-index: 1;
+}
+
+.card .top .text .name-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.card .top .text .name-wrapper i {
+  font-size: 1rem;
+  margin-left: 0.6rem;
+  color: #009abf;
+}
+
+.card .top .text .name-wrapper .name {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.card .top .text .title {
+  font-size: 0.8rem;
+}
+
+.card .bottom {
+  margin: -2rem;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem 0.8rem;
+  background-color: #3895d3;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.card .bottom .desc {
+  text-align: left;
+  font-size: 12px;
+  color: #fffff9;
+}
+
+.card .bottom .buttons {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.card .bottom .buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+  color: #1d252c;
+  font-size: 0.7rem;
+  background-color: #1261a0;
+  border-radius: 1em;
+}
+
+.height {
+  color: #fffff9;
+}
+
+.card .bottom .buttons button i {
+  font-size: 0.7rem;
+  color: white;
+}
+
+.card .bottom .buttons button:hover {
+  filter: brightness(110%);
+}
