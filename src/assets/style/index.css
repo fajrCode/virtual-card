@@ -16,12 +16,12 @@ body {
   display: grid;
   place-items: center;
   font: 400 16px/1.5 "Poppins", sans-serif;
-  background-color: #072f5f;
+  background-color: #163020;
 }
 
 .card {
   max-width: 300px;
-  margin: 0rem;
+  margin: 2rem;
   background-color: #fffff9;
   border-radius: 1rem;
   box-shadow: 0 30px 20px -10px rgba(0, 0, 0, 0.2);
@@ -38,12 +38,11 @@ body {
 
 .card .top {
   position: relative;
-  margin: -2rem;
   width: 300px;
-  height: 360px;
+  height: 300px;
   color: #fffff9;
   border-radius: 1rem 1rem 0 0;
-  background: url("https://i.pinimg.com/564x/fb/ca/55/fbca559bda6a4a5582ee8124236712d3.jpg")
+  background: url("https://i.pinimg.com/736x/ed/11/88/ed11887644f3353406acf77d4bdf6f60.jpg")
     no-repeat center top;
   transition: background-size 1.5s ease-in-out;
   background-size: 100%;
@@ -83,7 +82,7 @@ body {
 
 .card .top .social-buttons button i {
   font-size: 1rem;
-  color: #adc0d8;
+  color: #163020;
 }
 
 .card .top .social-buttons button:hover i {
@@ -104,8 +103,14 @@ body {
   color: #fffff9;
 }
 
+.card .top button.like i:hover {
+  filter: brightness(110%);
+  color: red;
+  transform: scale(1.2);
+}
+
 .card .top .text {
-  text-align: left;
+  color: #163020;
   position: absolute;
   bottom: 1.5rem;
   left: 1.5rem;
@@ -122,7 +127,7 @@ body {
 .card .top .text .name-wrapper i {
   font-size: 1rem;
   margin-left: 0.6rem;
-  color: #009abf;
+  color: #163020;
 }
 
 .card .top .text .name-wrapper .name {
@@ -135,17 +140,14 @@ body {
 }
 
 .card .bottom {
-  margin: -2rem;
-  margin-top: 2rem;
   padding: 1rem 1.5rem 0.8rem;
-  background-color: #3895d3;
+  background-color: #EEF0E5;
   border-radius: 0 0 1rem 1rem;
 }
 
 .card .bottom .desc {
-  text-align: left;
   font-size: 12px;
-  color: #fffff9;
+  color: #163020;
 }
 
 .card .bottom .buttons {
@@ -160,7 +162,7 @@ body {
   margin-right: 0.5rem;
   color: #1d252c;
   font-size: 0.7rem;
-  background-color: #1261a0;
+  background-color: #304D30;
   border-radius: 1em;
 }
 
@@ -169,8 +171,8 @@ body {
 }
 
 .card .bottom .buttons button i {
-  font-size: 0.7rem;
   color: white;
+  font-size: 0.7rem;
 }
 
 .card .bottom .buttons button:hover {
